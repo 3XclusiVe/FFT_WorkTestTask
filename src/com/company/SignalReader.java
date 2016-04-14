@@ -41,9 +41,9 @@ public class SignalReader {
         }
     }
 
-    public int[] readChannel(int channelNumber) {
+    public double[] readChannel(int channelNumber) {
 
-        int[] ChannelOneSignal = new int[signalLenth / ChannelNumber];
+        double[] ChannelOneSignal = new double[signalLenth / ChannelNumber];
 
         for(int i = channelNumber - 1; i < signalLenth; i+= ChannelNumber) {
             ChannelOneSignal[i / ChannelNumber] = Signal[i];
